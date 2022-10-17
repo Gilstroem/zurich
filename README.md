@@ -6,6 +6,8 @@
 
 - Package and publish
 
+--- 
+
 ## `distance`
 
 Get the (bigram or trigram) distance between two strings (measured by jaccard index)
@@ -50,6 +52,8 @@ import { distance } from "zurich";
 const d1 = distance("dog", "dog", { caseSensitive: true }); // 0
 const d2 = distance("dog", "DOG", { caseSensitive: true }); // 1
 ```
+
+---
 
 ## `bestMatch`
 
@@ -103,7 +107,9 @@ const match2 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 5 }); // [
 const match3 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // ['dog']
 ```
 
-> The `bestMatch` (and the `bestObjMatchByKey`) functions have appropriate return-types, dependant on `returnCount`; if `returnCount == 1`, the return-type is `string | null`, else it is `string[] | null`
+**NB:** The `bestMatch` (and the `bestObjMatchByKey`) functions have appropriate return-types, dependant on `returnCount`; if `returnCount == 1`, the return-type is `string | null`, else it is `string[] | null`
+
+---
 
 ## `bestObjMatchByKey`
 
@@ -138,4 +144,4 @@ const match3 = bestObjMatchByKey(
 ); // null
 ```
 
-> The `n`, `caseSensitive`, and `returnCount` options for `bestObjMatchByKey`, work the same as for `distance` and `bestMatch`
+**NB:** The `n`, `caseSensitive`, and `returnCount` options for `bestObjMatchByKey`, work the same as for `distance` and `bestMatch`
