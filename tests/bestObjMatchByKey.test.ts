@@ -1,7 +1,5 @@
 import { bestObjMatchByKey } from "..";
 
-// These tests should mirror those in bestMatch.test.ts, and use `toEqual` instead of `toEqual`
-
 describe("The 'bestObjMatchByKey' function with bigrams", () => {
   it(`correctly returns null when given an empty input string`, () => {
     const other = [

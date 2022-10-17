@@ -2,7 +2,7 @@ import { GetOtherFn, Options } from "../types";
 import { indexOfBestGramMatch } from "./gramMatching";
 import { removeAt } from "./removeAt";
 
-export function handleMultipleReturns<T>(
+export function getMultipleGramMatches<T>(
   str: string,
   other: T[],
   options: Options,
@@ -17,11 +17,11 @@ export function handleMultipleReturns<T>(
     remainingOther = removeAt(remainingOther, i);
   }
 
-  if (arrIsEmpty(results)) return null;
+  if (arrayIsEmpty(results)) return null;
 
   return results;
 }
 
-function arrIsEmpty<T>(arr: T[]): boolean {
+function arrayIsEmpty<T>(arr: T[]): boolean {
   return arr.length === 0;
 }

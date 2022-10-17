@@ -13,7 +13,11 @@ Get the (bigram or trigram) distance between two strings (measured by jaccard in
 ### Signature
 
 ```typescript
-(a: string, b: string, options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number = 1 }): number
+distance(
+    a: string,
+    b: string,
+    options?: { n?: number = 2, caseSensitive?: boolean = false }
+): number
 ```
 
 ### Usage
@@ -54,7 +58,11 @@ Get the string matching closest to a another string, from an array of strings
 ### Signature
 
 ```typescript
-(str: string, other: string[], options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }): string
+bestMatch(
+    str: string,
+    other: string[],
+    options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }
+): string
 ```
 
 ### Usage
@@ -104,7 +112,12 @@ Get the object matching closest to a string for a given key, from an array of ob
 ### Signature
 
 ```typescript
-<T extends object>(str: string, other: T[], key: keyof T, options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }): string
+bestObjMatchByKey<T extends object>(
+    str: string,
+    other: T[],
+    key: keyof T,
+    options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }
+): string
 ```
 
 ### Usage

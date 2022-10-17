@@ -1,9 +1,9 @@
 import { bestGramMatch } from "./utils/gramMatching";
 import { mergeDefaultAndArgOptions } from "./utils/mergeDefaultAndArgOptions";
 import { Options } from "./types";
-import { handleMultipleReturns } from "./utils/handleMultipleReturns";
+import { getMultipleGramMatches } from "./utils/getMultipleGramMatches";
 
-/* The overloads helps TS determine whether the function will return `string` or `string[]` */
+/* The overloads help TS determine whether the function will return `string` or `string[]` */
 
 function bestMatch(
   str: string,
@@ -23,7 +23,7 @@ function bestMatch(
   const options = mergeDefaultAndArgOptions(optionsArg);
 
   if (options.returnCount > 1)
-    return handleMultipleReturns(str, other, options);
+    return getMultipleGramMatches(str, other, options);
 
   return bestGramMatch(str, other, options);
 }
