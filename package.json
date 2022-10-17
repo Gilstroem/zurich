@@ -21,7 +21,8 @@
     "test": "jest",
     "build": "npm run build:esm && npm run build:cjs",
     "build:cjs": "ncc build index.ts -o dist -m",
-    "build:esm": "tsc --module ES6 --outDir esm"
+    "build:esm": "tsc --module ES6 --outDir esm",
+    "publish": "np"
   },
   "author": "Nikolaj Alexander Neel Gilstroem",
   "license": "MIT",
