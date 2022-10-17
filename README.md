@@ -44,9 +44,7 @@ const d3 = distance("dog", "monkey"); // 1
 Get distance using trigrams, with the `{n: 3}` option
 
 ```typescript
-const d1 = distance("dog", "dog", { n: 3 }); // 0
-const d2 = distance("toad", "road", { n: 3 }); // 0.6666666666666667
-const d3 = distance("dog", "monkey", { n: 3 }); // 1
+const d = distance("toad", "road", { n: 3 }); // 0.6666666666666667
 ```
 
 #### Case sensitive (`caseSensitive = true`)
@@ -71,7 +69,7 @@ bestMatch(
     options?: {
         n?: number = 2,
         caseSensitive?: boolean = false,
-        returnCount?: number
+        returnCount?: number = 1
     }
 ): string
 ```
@@ -88,19 +86,19 @@ const match2 = bestMatch("dog", ["zebras", "hedgehog", "warthog"]); // 'warthog'
 const match3 = bestMatch("dog", []); // null
 ```
 
-#### Trigrams (`n = 3`)
+#### Trigrams
 
 ```typescript
 const match = bestMatch("tigers", ["liger", "tiger", "tigers"], { n: 3 }); // 'tigers'
 ```
 
-#### Case sensitive (`caseSensitive = false`)
+#### Case sensitive
 
 ```typescript
 const match = bestMatch("DOG", ["dog", "DOG"], { n: 3, caseSensitive: true }); // 'DOG'
 ```
 
-#### Returning multiple ordered matches (`returnCount = number`)
+#### Returning multiple ordered matches
 
 ```typescript
 const match1 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // ['dog', 'zog']
@@ -126,7 +124,7 @@ bestObjMatchByKey<T extends object>(
     options?: {
         n?: number = 2,
         caseSensitive?: boolean = false,
-        returnCount?: number
+        returnCount?: number = 1
     }
 ): string
 ```
