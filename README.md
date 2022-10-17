@@ -1,6 +1,7 @@
-# Zurich
+# Zurich 🏔
 
-[Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, with a simple API
+> [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library. 
+> Simple API, strong helpful types.
 
 ## TODO
 
