@@ -2,6 +2,10 @@
 
 [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, with a simple API
 
+## TODO
+
+- Package and publish
+
 ## `distance`
 
 Get the (bigram or trigram) distance between two strings (measured by jaccard index)
