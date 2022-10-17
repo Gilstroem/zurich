@@ -5,7 +5,7 @@
 
 ## TODO
 
-- Package and publish
+- ~~Package~~ and publish
 
 ---
 
