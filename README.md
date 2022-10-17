@@ -1,11 +1,14 @@
 # Zurich 🏔
 
+<p align="center">
+<a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
+        <img src="https://badgen.net/bundlephobia/minzip/zurich@1.0.1" /></a>
+<a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
+        <img src="https://badgen.net/bundlephobia/dependency-count/zurich@1.0.1" /></a>
+</p>
+
 > [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library.<br/>
 > Simple API, precise, helpful types.
-
-## TODO
-
-- ~~Package~~ and publish
 
 ---
 
