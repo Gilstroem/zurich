@@ -6,7 +6,7 @@ import { getNGrams } from "./utils/getNGrams";
 export function distance(
   a: string,
   b: string,
-  optionsArg?: Partial<Options>
+  optionsArg?: Partial<Pick<Options, "caseSensitive" | "n">>
 ): number {
   const { n, caseSensitive } = mergeDefaultAndArgOptions(optionsArg);
 
