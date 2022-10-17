@@ -6,9 +6,9 @@
 
 - Package and publish
 
---- 
+---
 
-## `distance`
+## `distance` - getting the distance between two strings
 
 Get the (bigram or trigram) distance between two strings (measured by jaccard index)
 
@@ -18,13 +18,18 @@ Get the (bigram or trigram) distance between two strings (measured by jaccard in
 distance(
     a: string,
     b: string,
-    options?: { n?: number = 2, caseSensitive?: boolean = false }
+    options?: {
+        n?: number = 2,
+        caseSensitive?: boolean = false
+    }
 ): number
 ```
 
 ### Usage
 
-#### Basic (defaults to bigrams, `n = 2`)
+#### Basic
+
+The `options` object is optional, and the function defaults the using bi-grams.
 
 ```typescript
 import { distance } from "zurich";
@@ -34,11 +39,11 @@ const d2 = distance("toad", "road"); // 0.5
 const d3 = distance("dog", "monkey"); // 1
 ```
 
-#### Trigrams (`n = 3`)
+#### Trigrams
+
+Get distance using trigrams, with the `{n: 3}` option
 
 ```typescript
-import { distance } from "zurich";
-
 const d1 = distance("dog", "dog", { n: 3 }); // 0
 const d2 = distance("toad", "road", { n: 3 }); // 0.6666666666666667
 const d3 = distance("dog", "monkey", { n: 3 }); // 1
@@ -47,17 +52,15 @@ const d3 = distance("dog", "monkey", { n: 3 }); // 1
 #### Case sensitive (`caseSensitive = true`)
 
 ```typescript
-import { distance } from "zurich";
-
 const d1 = distance("dog", "dog", { caseSensitive: true }); // 0
 const d2 = distance("dog", "DOG", { caseSensitive: true }); // 1
 ```
 
 ---
 
-## `bestMatch`
+## `bestMatch` - getting the closest string in an array of strings
 
-Get the string matching closest to a another string, from an array of strings
+Get the string(s) matching closest to a another string, from an array of strings
 
 ### Signature
 
@@ -65,7 +68,11 @@ Get the string matching closest to a another string, from an array of strings
 bestMatch(
     str: string,
     other: string[],
-    options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }
+    options?: {
+        n?: number = 2,
+        caseSensitive?: boolean = false,
+        returnCount?: number
+    }
 ): string
 ```
 
@@ -84,24 +91,18 @@ const match3 = bestMatch("dog", []); // null
 #### Trigrams (`n = 3`)
 
 ```typescript
-import { bestMatch } from "zurich";
-
-const match1 = bestMatch("tigers", ["liger", "tiger", "tigers"], { n: 3 }); // 'tigers'
+const match = bestMatch("tigers", ["liger", "tiger", "tigers"], { n: 3 }); // 'tigers'
 ```
 
 #### Case sensitive (`caseSensitive = false`)
 
 ```typescript
-import { bestMatch } from "zurich";
-
 const match = bestMatch("DOG", ["dog", "DOG"], { n: 3, caseSensitive: true }); // 'DOG'
 ```
 
 #### Returning multiple ordered matches (`returnCount = number`)
 
 ```typescript
-import { bestMatch } from "zurich";
-
 const match1 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // ['dog', 'zog']
 const match2 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 5 }); // ['dog', 'zog', 'hog']
 const match3 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // ['dog']
@@ -111,9 +112,9 @@ const match3 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // [
 
 ---
 
-## `bestObjMatchByKey`
+## `bestObjMatchByKey` - getting the closest object in an array
 
-Get the object matching closest to a string for a given key, from an array of objects
+Get the object(s) matching closest to a string for a given key, from an array of objects
 
 ### Signature
 
@@ -122,7 +123,11 @@ bestObjMatchByKey<T extends object>(
     str: string,
     other: T[],
     key: keyof T,
-    options?: { n?: number = 2, caseSensitive?: boolean = false, returnCount?: number }
+    options?: {
+        n?: number = 2,
+        caseSensitive?: boolean = false,
+        returnCount?: number
+    }
 ): string
 ```
 
