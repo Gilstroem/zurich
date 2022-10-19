@@ -7,7 +7,7 @@
 <a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
         <img src="https://badgen.net/bundlephobia/tree-shaking/zurich@1.0.1" /></a>
 
-> [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library.<br/>
+> [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, for fuzzy search and more.<br/>
 > Simple API, precise, helpful types.
 
 ---
@@ -21,6 +21,10 @@ Using `npm`:
 ```bash
 npm i zurich
 ```
+
+---
+
+<br/>
 
 ## `distance` - getting the distance between two strings
 

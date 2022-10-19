@@ -2,21 +2,8 @@
   "name": "zurich",
   "version": "1.0.1",
   "description": "Jaccard string distance library",
-  "main": "./dist/index.js",
-  "module": "./esm/index.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**",
-    "esm/**"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gilstroem/zurich.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gilstroem/zurich/issues"
-  },
-  "homepage": "https://github.com/gilstroem/zurich#readme",
+  "author": "Nikolaj Alexander Neel Gilstroem",
+  "license": "MIT",
   "scripts": {
     "test": "jest",
     "build": "npm run build:esm && npm run build:cjs",
@@ -24,16 +11,30 @@
     "build:esm": "tsc --module ES6 --outDir esm",
     "publish": "np"
   },
-  "author": "Nikolaj Alexander Neel Gilstroem",
-  "license": "MIT",
-  "prettier": {
-    "semi": true,
-    "singleQuote": false
-  },
   "devDependencies": {
     "@types/jest": "^29.1.2",
     "jest": "^29.2.0",
     "prettier": "^2.7.1",
     "ts-jest": "^29.0.3"
-  }
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": false
+  },
+  "main": "./dist/index.js",
+  "module": "./esm/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**",
+    "esm/**"
+  ],
+  "homepage": "https://github.com/gilstroem/zurich#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gilstroem/zurich.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gilstroem/zurich/issues"
+  },
+  "keywords": ["jaccard", "index", "fuzzy", "string", "matching", "search", "fast", "simple", "typescript"]
 }
