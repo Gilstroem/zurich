@@ -1,11 +1,11 @@
 # Zurich 🏔
 
 <a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/minzip/zurich@1.0.1" /></a>
+        <img src="https://badgen.net/bundlephobia/minzip/zurich@1.0.2" /></a>
 <a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/dependency-count/zurich@1.0.1" /></a>
+        <img src="https://badgen.net/bundlephobia/dependency-count/zurich@1.0.2" /></a>
 <a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/tree-shaking/zurich@1.0.1" /></a>
+        <img src="https://badgen.net/bundlephobia/tree-shaking/zurich@1.0.2" /></a>
 
 > [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, for fuzzy search and more.<br/>
 > Simple API, precise, helpful types.
@@ -40,7 +40,7 @@ distance(
         n?: number = 2,
         caseSensitive?: boolean = false
     }
-): number | null
+): number
 ```
 
 ### Usage
