@@ -10,8 +10,6 @@
 > [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, for fuzzy search and more.<br/>
 > Simple API, precise, helpful types.
 
----
-
 <br/>
 
 ## Installation
@@ -21,8 +19,6 @@ Using `npm`:
 ```bash
 npm i zurich
 ```
-
----
 
 <br/>
 
@@ -73,8 +69,6 @@ Take casing into account when calculating distance, by setting `{ caseSensitive:
 const d1 = distance("dog", "dog", { caseSensitive: true }); // 0
 const d2 = distance("dog", "DOG", { caseSensitive: true }); // 1
 ```
-
----
 
 <br/>
 
@@ -129,8 +123,6 @@ const match1 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // [
 const match2 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 5 }); // ['dog', 'zog', 'hog']
 const match3 = bestMatch("dog", ["zog", "hog", "dog"], { returnCount: 2 }); // ['dog']
 ```
-
----
 
 <br/>
 
