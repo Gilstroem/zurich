@@ -1,0 +1,33 @@
+{
+  "name": "currying-single-word-fiscally",
+  "date": "2022-11-05T15:41:43.565Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base distance",
+      "ops": 976242,
+      "margin": 0.13,
+      "percentSlower": 0
+    },
+    {
+      "name": "distance with currying, uncurried",
+      "ops": 964442,
+      "margin": 0.11,
+      "percentSlower": 1.21
+    },
+    {
+      "name": "distance with currying, curried",
+      "ops": 862267,
+      "margin": 0.2,
+      "percentSlower": 11.67
+    }
+  ],
+  "fastest": {
+    "name": "base distance",
+    "index": 0
+  },
+  "slowest": {
+    "name": "distance with currying, curried",
+    "index": 2
+  }
+}

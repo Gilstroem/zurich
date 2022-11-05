@@ -13,7 +13,8 @@
       "noUnusedParameters": true,
       "noImplicitAny": true,
       "outDir": "./dist",
-      "target": "es5"
+      "target": "es5",
+      "resolveJsonModule": true
     },
     "include": ["./index.ts"]
   }

@@ -165,6 +165,12 @@ const match3 = bestObjMatchByKey(
 ); // null
 ```
 
+## Performance notes
+
+See the `perf`-folder to see why certain decisions have been made.
+
+- See the [distance-currying](/perf/distance-currying/README.md)-folder for an explanation of why `distance` is not curry-capable.
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

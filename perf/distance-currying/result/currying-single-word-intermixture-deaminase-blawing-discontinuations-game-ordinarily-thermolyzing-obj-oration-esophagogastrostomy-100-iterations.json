@@ -1,0 +1,33 @@
+{
+  "name": "currying-single-word-intermixture-deaminase-blawing-discontinuations-game-ordinarily-thermolyzing-obj-oration-esophagogastrostomy-100-iterations",
+  "date": "2022-11-05T15:46:07.588Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base distance",
+      "ops": 468.5,
+      "margin": 0.22,
+      "percentSlower": 0
+    },
+    {
+      "name": "distance with currying, uncurried",
+      "ops": 468.1,
+      "margin": 0.2,
+      "percentSlower": 0.09
+    },
+    {
+      "name": "distance with currying, curried",
+      "ops": 465.6,
+      "margin": 0.21,
+      "percentSlower": 0.62
+    }
+  ],
+  "fastest": {
+    "name": "base distance",
+    "index": 0
+  },
+  "slowest": {
+    "name": "distance with currying, curried",
+    "index": 2
+  }
+}

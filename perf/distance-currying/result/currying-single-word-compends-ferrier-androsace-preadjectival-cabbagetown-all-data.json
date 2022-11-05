@@ -1,0 +1,33 @@
+{
+  "name": "currying-single-word-compends-ferrier-androsace-preadjectival-cabbagetown-all-data",
+  "date": "2022-11-05T15:45:35.560Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base distance",
+      "ops": 0.318,
+      "margin": 0.1,
+      "percentSlower": 0
+    },
+    {
+      "name": "distance with currying, uncurried",
+      "ops": 0.3178,
+      "margin": 0.05,
+      "percentSlower": 0.06
+    },
+    {
+      "name": "distance with currying, curried",
+      "ops": 0.3156,
+      "margin": 0.33,
+      "percentSlower": 0.75
+    }
+  ],
+  "fastest": {
+    "name": "base distance",
+    "index": 0
+  },
+  "slowest": {
+    "name": "distance with currying, curried",
+    "index": 2
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "currying-single-word-doucker-all-data",
+  "date": "2022-11-05T15:43:28.748Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base distance",
+      "ops": 2.28,
+      "margin": 0.3,
+      "percentSlower": 0
+    },
+    {
+      "name": "distance with currying, uncurried",
+      "ops": 2.24,
+      "margin": 0.72,
+      "percentSlower": 1.75
+    },
+    {
+      "name": "distance with currying, curried",
+      "ops": 2.22,
+      "margin": 0.62,
+      "percentSlower": 2.63
+    }
+  ],
+  "fastest": {
+    "name": "base distance",
+    "index": 0
+  },
+  "slowest": {
+    "name": "distance with currying, curried",
+    "index": 2
+  }
+}
