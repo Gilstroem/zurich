@@ -1,11 +1,20 @@
 # Zurich 🏔
 
-<a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/minzip/zurich@1.0.2" /></a>
-<a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/dependency-count/zurich@1.0.2" /></a>
-<a href="https://bundlephobia.com/package/zurich" alt="Bundlephobia">
-        <img src="https://badgen.net/bundlephobia/tree-shaking/zurich@1.0.2" /></a>
+<a aria-label="NPM version" href="https://www.npmjs.com/package/gilstroem/zurich">
+    <img alt="" src="https://badgen.net/npm/v/zurich">
+  </a>
+  <a aria-label="Package size" href="https://bundlephobia.com/result?p=zurich">
+    <img alt="" src="https://badgen.net/bundlephobia/minzip/zurich@1">
+  </a>
+  <a aria-label="Dependency count" href="https://bundlephobia.com/result?p=zurich">
+    <img alt="" src="https://badgen.net/bundlephobia/dependency-count/zurich@1">
+  </a>
+  <a aria-label="Tree-shaking" href="https://bundlephobia.com/result?p=zurich">
+    <img alt="" src="https://badgen.net/bundlephobia/tree-shaking/zurich@1">
+  </a>
+  <a aria-label="License" href="https://github.com/gilstroem/zurich/blob/master/LICENSE">
+    <img alt="" src="https://badgen.net/npm/license/zurich">
+  </a>
 
 > [Jaccard Index](https://en.wikipedia.org/wiki/Jaccard_index)-based string distance TS library, for fuzzy search and more.<br/>
 > Simple API, precise, helpful types.
@@ -170,6 +179,7 @@ const match3 = bestObjMatchByKey(
 See the `perf`-folder to see why certain decisions have been made.
 
 - See the [distance-currying](/perf/distance-currying/README.md)-folder for an explanation of why `distance` is not curry-capable.
+- See the [bestMatch-bucket-sort](/perf/bestMatch-bucket-sort/README.md)-folder for details on how `bestMatch` was made 50-700 times faster.
 
 ## Contributing
 
