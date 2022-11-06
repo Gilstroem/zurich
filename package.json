@@ -1,6 +1,6 @@
 {
   "name": "zurich",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Jaccard string distance library",
   "author": "Nikolaj Alexander Neel Gilstroem",
   "license": "MIT",
