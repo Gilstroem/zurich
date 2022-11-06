@@ -1,6 +1,6 @@
-import { bestGramMatch } from "./utils/gramMatching";
 import { mergeDefaultAndArgOptions } from "./utils/mergeDefaultAndArgOptions";
 import { Options } from "./types";
+import { getBestGramMatch } from "./utils/getBestGramMatch";
 import { getMultipleGramMatches } from "./utils/getMultipleGramMatches";
 
 export type OtherBase = { [key: string]: any | undefined };
@@ -25,12 +25,14 @@ function bestObjMatchByKey<Other extends OtherBase>(
   key: keyof Other,
   optionsArg?: Partial<Options>
 ): Other | Other[] | null {
+  if (str.length === 0 || other.length === 0) return null;
+
   const options = mergeDefaultAndArgOptions(optionsArg);
 
   if (options.returnCount > 1)
     return getMultipleGramMatches(str, other, options, (other) => other[key]);
 
-  return bestGramMatch(str, other, options, (other) => other[key]);
+  return getBestGramMatch(str, other, options, (other) => other[key]);
 }
 
 export { bestObjMatchByKey };

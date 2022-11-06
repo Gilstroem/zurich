@@ -10,7 +10,7 @@
     "build:esm": "tsc --module ES6 --outDir esm",
     "build": "npm run build:esm && npm run build:cjs",
     "publish": "np",
-    "test": "jest"
+    "test": "jest --silent false"
   },
   "devDependencies": {
     "@types/jest": "^29.1.2",

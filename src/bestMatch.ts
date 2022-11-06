@@ -1,7 +1,7 @@
-import { bestGramMatch } from "./utils/gramMatching";
 import { mergeDefaultAndArgOptions } from "./utils/mergeDefaultAndArgOptions";
 import { Options } from "./types";
 import { getMultipleGramMatches } from "./utils/getMultipleGramMatches";
+import { getBestGramMatch } from "./utils/getBestGramMatch";
 
 /* The overloads help TS determine whether the function will return `string` or `string[]` */
 
@@ -20,12 +20,14 @@ function bestMatch(
   other: string[],
   optionsArg?: Partial<Options>
 ): string | string[] | null {
+  if (str.length === 0 || other.length === 0) return null;
+
   const options = mergeDefaultAndArgOptions(optionsArg);
 
   if (options.returnCount > 1)
     return getMultipleGramMatches(str, other, options);
 
-  return bestGramMatch(str, other, options);
+  return getBestGramMatch(str, other, options);
 }
 
 export { bestMatch };

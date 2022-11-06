@@ -1,0 +1,33 @@
+{
+  "name": "best-match-bucket-sort-astrologaster-100-return-100",
+  "date": "2022-11-06T13:43:15.389Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base bestMatch, all items",
+      "ops": 145,
+      "margin": 0.21,
+      "percentSlower": 97.77
+    },
+    {
+      "name": "bucket sort bestMatch, all items",
+      "ops": 6505,
+      "margin": 0.12,
+      "percentSlower": 0
+    },
+    {
+      "name": "bucket sort (array) bestMatch",
+      "ops": 5256,
+      "margin": 0.18,
+      "percentSlower": 19.2
+    }
+  ],
+  "fastest": {
+    "name": "bucket sort bestMatch, all items",
+    "index": 1
+  },
+  "slowest": {
+    "name": "base bestMatch, all items",
+    "index": 0
+  }
+}

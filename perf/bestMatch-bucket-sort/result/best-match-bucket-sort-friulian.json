@@ -1,0 +1,33 @@
+{
+  "name": "best-match-bucket-sort-friulian",
+  "date": "2022-11-06T12:59:19.490Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base bestMatch",
+      "ops": 9140,
+      "margin": 0.11,
+      "percentSlower": 0
+    },
+    {
+      "name": "bucket sort bestMatch",
+      "ops": 9132,
+      "margin": 0.16,
+      "percentSlower": 0.09
+    },
+    {
+      "name": "bucket sort (array) bestMatch",
+      "ops": 9138,
+      "margin": 0.1,
+      "percentSlower": 0.02
+    }
+  ],
+  "fastest": {
+    "name": "base bestMatch",
+    "index": 0
+  },
+  "slowest": {
+    "name": "bucket sort bestMatch",
+    "index": 1
+  }
+}

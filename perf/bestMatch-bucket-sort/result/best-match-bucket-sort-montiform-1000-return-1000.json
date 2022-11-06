@@ -1,0 +1,33 @@
+{
+  "name": "best-match-bucket-sort-montiform-1000-return-1000",
+  "date": "2022-11-06T13:02:59.535Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base bestMatch, all items",
+      "ops": 1,
+      "margin": 0.07,
+      "percentSlower": 99.85
+    },
+    {
+      "name": "bucket sort bestMatch, all items",
+      "ops": 660,
+      "margin": 0.11,
+      "percentSlower": 0
+    },
+    {
+      "name": "bucket sort (array) bestMatch",
+      "ops": 614,
+      "margin": 0.1,
+      "percentSlower": 6.97
+    }
+  ],
+  "fastest": {
+    "name": "bucket sort bestMatch, all items",
+    "index": 1
+  },
+  "slowest": {
+    "name": "base bestMatch, all items",
+    "index": 0
+  }
+}

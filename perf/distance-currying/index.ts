@@ -5,9 +5,9 @@ const data = Object.keys(rawData);
 
 function singleWord() {
   const baseName = `currying-single-word`;
-  const queryIndex = Math.floor(Math.random() * (data.length + 1));
+  const queryIndex = Math.floor(Math.random() * (data.length + 1)); // TODO FIX
   const query = data[queryIndex];
-  const otherIndex = Math.floor(Math.random() * (data.length + 1));
+  const otherIndex = Math.floor(Math.random() * (data.length + 1)); // TODO FIX (might overflow)
   const otherQuery = data[otherIndex];
 
   benchmarks({ baseName, query, otherQuery, data });

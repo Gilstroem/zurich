@@ -1,0 +1,33 @@
+{
+  "name": "best-match-bucket-sort-sicklewise-1000-return-1000",
+  "date": "2022-11-06T12:51:39.349Z",
+  "version": "1.0.0",
+  "results": [
+    {
+      "name": "base bestMatch, all items",
+      "ops": 1,
+      "margin": 0.08,
+      "percentSlower": 99.84
+    },
+    {
+      "name": "bucket sort bestMatch, all items",
+      "ops": 632,
+      "margin": 0.12,
+      "percentSlower": 0
+    },
+    {
+      "name": "bucket sort (array) bestMatch",
+      "ops": 593,
+      "margin": 0.11,
+      "percentSlower": 6.17
+    }
+  ],
+  "fastest": {
+    "name": "bucket sort bestMatch, all items",
+    "index": 1
+  },
+  "slowest": {
+    "name": "base bestMatch, all items",
+    "index": 0
+  }
+}
